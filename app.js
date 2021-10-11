@@ -35,14 +35,4 @@ app.listen(process.env.PORT || 5555, () => {
     console.log('server listening on port 5555')
 })
 
-//deployment 
-const path = require('path');
-app.use(express.static(path.join(__dirname, "/client/build")));
-
-app.use((req, res) => {
-    // If no routes match, send them the React HTML.
-    res.sendFile(__dirname + "/client/build/index.html");
-  });
-
-
 module.exports = app;
