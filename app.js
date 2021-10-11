@@ -31,7 +31,7 @@ const phones = require("./routes/phones");
 
 app.use("/api/phones", phones);
 
-app.listen(5555, () => {
+app.listen(process.env.PORT || 5555, () => {
     console.log('server listening on port 5555')
 })
 
