@@ -9,7 +9,7 @@ require("./config")(app);
 
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
-const DB_URL= "mongodb://localhost/DCLS_CHALLENGE";
+const DB_URL= process.env.MONGODB_URI || "mongodb://localhost/DCLS_CHALLENGE";
 
 app.use(
     session({
@@ -32,6 +32,15 @@ app.use("/api/phones", phones);
 app.listen(5555, () => {
     console.log('server listening on port 5555')
 })
+
+//deployment 
+const path = require('path');
+app.use(express.static(path.join(__dirname, "/client/build")));
+
+app.use((req, res) => {
+    // If no routes match, send them the React HTML.
+    res.sendFile(__dirname + "/client/build/index.html");
+  });
 
 
 module.exports = app;
