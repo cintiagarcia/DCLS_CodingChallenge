@@ -59,3 +59,31 @@ a {
   color:whitesmoke;
   border: 0px solid transparent;
 }
+
+.grid {
+  display: flex;
+  flex-flow: row wrap; 
+}
+
+.card {
+  display: flex;
+	width:230px;
+	background-color:rgb(244, 241, 241);
+	
+}
+
+h5 {
+  font-family: times, serif;
+  font-size: 12pt;
+}
+
+h4 {
+  font-family: times, serif;
+  font-size: 14pt;
+}
+
+h2 {
+  font-family: times, serif;
+  font-size: 32pt;
+}
+

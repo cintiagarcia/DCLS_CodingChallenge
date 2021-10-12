@@ -66,12 +66,12 @@ class PhoneDetails extends React.Component {
                 
                 <ListGroup className="list-group-flush">
                     <h1>{this.state.phone.manufacturer}</h1>
-                    <h4>{this.state.phone.color}</h4>
-                    <h4>{this.state.phone.color}</h4>
-                    <h4>{this.state.phone.price}</h4>
-                    <h4>{this.state.phone.screen}</h4>
-                    <h4>{this.state.phone.processor}</h4>
-                    <h4>{this.state.phone.ram}</h4>
+                    <br/>
+                    <h4>Color: {this.state.phone.color}</h4>
+                    <h4>Price: {this.state.phone.price}</h4>
+                    <h4>Screen: {this.state.phone.screen}</h4>
+                    <h4>Processor: {this.state.phone.processor}</h4>
+                    <h4>Ram: {this.state.phone.ram}</h4>
                 </ListGroup>
                 <CardBody>
                     <Link to={'/phone'}>
