@@ -36,7 +36,7 @@ handleChange = (event) => {
 render () {
     return (
         <div className="d-flex justify-content-center p-4">
-            <div className="card w-50 h-100 p-1">
+            <div className="card w-50 h-100 p-1 ">
                 <h5 className="card-header info-color white-text text-center py-4">
                     <strong>Add New Phone</strong>      
                 </h5>

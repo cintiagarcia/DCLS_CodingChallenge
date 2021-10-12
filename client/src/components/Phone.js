@@ -20,7 +20,7 @@ export const phone = (props) => {
 
                                     <div class="row row-cols-md-1 g-4 p-4">
                                         <div class="col">
-                                            <div class="card">
+                                            <div class="card-phones">
                                                 <div class="card-body">
                                                     <h4 class="card-title p-2">{phone.name}</h4>
                                                     <img

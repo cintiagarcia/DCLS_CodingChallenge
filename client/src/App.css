@@ -65,11 +65,10 @@ a {
   flex-flow: row wrap; 
 }
 
-.card {
+.card-phones {
   display: flex;
 	width:230px;
-	background-color:rgb(244, 241, 241);
-	
+	background-color:rgb(244, 241, 241);	
 }
 
 h5 {
